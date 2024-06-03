@@ -242,8 +242,8 @@ h2 {
 
 #location-input {
   padding: 15px;
-  min-width: 200px;
-  width: 60%;
+  min-width: 200px; /* Set a minimum width for the input */
+  width: 100%; /* Take up full width of the container */
   /* margin-right: 10px; */
   border: 2px solid #ccc;
   border-radius: 5px;
@@ -319,6 +319,13 @@ h2 {
     display: none;
   }
 
+  .input-container {
+    flex-direction: row; /* Change direction to row */
+    justify-content: space-between; /* Add space between items */
+    align-items: center;
+    text-align: center; /* Center the input vertically on smaller screens */
+  }
+
   .header .second_head {
     display: block;
     color: #fdf8f8;
@@ -362,18 +369,21 @@ h2 {
     border-radius: 0;
     box-shadow: none;
   }
+  #get-weather-btn {
+    width: 100%; /* Make the button take up full width of the container */
+  }
 
   .weather-info {
     margin-bottom: 20%;
   }
 
   #location-input {
-    width: calc(100% - 32px); /* Adjusted width to accommodate the button */
-    margin-right: 10px;
+    width: calc(70% - 10px); /* Adjust width to leave space for the button */
+    margin-right: 0; /* Remove right margin on smaller screens */
   }
 
   #get-weather-btn {
-    width: 140px; /* Adjusted width for the button */
+    width: 30%; /* Adjust width of the button */
   }
 }
 
