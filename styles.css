@@ -176,7 +176,7 @@ body {
 .profile-wrapper .profile-title {
   display: block;
   position: absolute;
-  top: 5%;
+  top: 2%;
   left: 50%;
   color: #fdf8f8;
   z-index: 2;
@@ -329,10 +329,11 @@ h2 {
   .header .second_head {
     display: block;
     color: #fdf8f8;
-    z-index: 2;
-    font-weight:500 ;
-    font-size: 3.5em;
+    z-index: 1;
+    font-weight: 200;
+    font-size: 2.6em;
     line-height: 1em;
+    letter-spacing: -0.02em;
     letter-spacing: -0.02em;
     position: absolute;
     top: 5%;
